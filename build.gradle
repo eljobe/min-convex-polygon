@@ -1,0 +1,7 @@
+plugins {
+  id 'application'
+  id 'idea'
+}
+
+mainClassName = 'com.technodabble.polygon.gui.MinimumConvexPolygon'
+
