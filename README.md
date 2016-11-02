@@ -42,13 +42,16 @@ In english, that boils down to these easy steps:
 
 ## How to build and run the program
 
-This is currently out of date and will be replaced with gradle commands in a few commits. Please hold.
+First install the application:
 
-Make sure you are running java 1.5.0 or better:
-> java -version
-cd to the directory where you unzipped the zip file.
-Run the program:
-> java -jar MinimumConvexPolygon.jar test/points-005.txt
-Each time you click the mouse in the GUI, the program will advance one step.
-If you want to run the program and just get the vertices of the polygon as output, run it like this:
-> java -jar MinimumConvexPolygon.jar test/points-005.txt -command
+```sh
+> ./gradlew install
+```
+
+Now, you can run it like so:
+
+```sh
+> build/install/min-convex-polygon/bin/min-convex-polygon src/test/resources/points-005.txt
+```
+
+This launches a GUI which advances through the algorithm one iteration each time you click the mouse.
