@@ -3,5 +3,14 @@ plugins {
   id 'idea'
 }
 
+buildScan {
+  tag 'Demo'
+
+  link 'GitHub', 'https://github.com/eljobe/min-convex-polygon'
+
+  value 'git-commit', 'git rev-parse --verify HEAD'.execute().text
+  value 'git-branch', 'git rev-parse --abbrev-ref HEAD'.execute().text
+}
+
 mainClassName = 'com.technodabble.polygon.gui.MinimumConvexPolygon'
 
